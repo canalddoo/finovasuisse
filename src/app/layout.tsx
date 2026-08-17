@@ -5,8 +5,9 @@ import "./globals.css";
 import "./layout.css";
 
 export const metadata: Metadata = {
-  title: "Finova Suisse | Solutions de Financement pour PME & Entrepreneurs",
-  description: "Plateforme financière moderne dédiée aux PME et indépendants en Suisse. Crédit, leasing, trésorerie et affacturage en ligne.",
+  title: "Finova Suisse | Soluzioni di Finanziamento per PMI & Imprenditori",
+  description:
+    "Piattaforma finanziaria moderna dedicata a PMI e liberi professionisti in Svizzera. Credito, leasing, liquidità e factoring online.",
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="it">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

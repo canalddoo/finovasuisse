@@ -18,58 +18,58 @@ const testimonialsData: Testimonial[] = [
     id: 1,
     rating: 5,
     quote:
-      "« J'ai recommandé Nova Evoluzione à plusieurs de mes clients pour le financement de leurs entreprises. À chaque fois, j'ai été impressionné par le soin qu'ils apportent au traitement de chaque dossier et par leur connaissance du marché. »",
+      "« Ho consigliato Nova Evoluzione a diversi miei clienti per il finanziamento delle loro aziende. Ogni volta sono rimasto impressionato dalla cura che dedicano alla gestione di ciascuna pratica e dalla loro conoscenza del mercato. »",
     name: "Giulia Marchetti",
-    company: "Marchetti & Associés",
-    city: "Milan",
+    company: "Marchetti & Associati",
+    city: "Milano",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
   },
   {
     id: 2,
     rating: 5,
     quote:
-      "Je cherchais une solution pour financer l'expansion de mon cabinet d'avocats. Nova Evoluzione m'a trouvé un prêt hypothécaire à des conditions excellentes en un temps record. Je les recommande vivement à tous.",
+      "Cercavo una soluzione per finanziare l'espansione del mio studio legale. Nova Evoluzione mi ha trovato un mutuo a condizioni eccellenti in tempi record. Li consiglio vivamente a tutti.",
     name: "Carla Romano",
     company: "Studio Romano & Partners",
-    city: "Rome",
+    city: "Roma",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
   },
   {
     id: 3,
     rating: 5,
     quote:
-      "Après une période difficile, nous avions besoin de liquidités pour rénover nos locaux. L'équipe de Nova Evoluzione nous a accompagnés à chaque étape en trouvant le produit idéal pour nos besoins.",
+      "Dopo un periodo difficile, avevamo bisogno di liquidità per ristrutturare i nostri locali. Il team di Nova Evoluzione ci ha accompagnato in ogni fase trovando il prodotto ideale per le nostre esigenze.",
     name: "Francesco Vito",
-    company: "Restaurant Il Vecchio Borgo",
-    city: "Naples",
+    company: "Ristorante Il Vecchio Borgo",
+    city: "Napoli",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
   },
   {
     id: 4,
     rating: 5,
     quote:
-      "Un service d'accompagnement remarquable. Leur réactivité et la clarté de leurs propositions financières nous ont permis de concrétiser notre projet dans des délais très courts.",
+      "Un servizio di consulenza straordinario. La loro reattività e la chiarezza delle proposte finanziarie ci hanno permesso di concretizzare il nostro progetto in tempi brevissimi.",
     name: "Marco Rossi",
     company: "Rossi Digital Studio",
-    city: "Turin",
+    city: "Torino",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
   },
   {
     id: 5,
     rating: 5,
-    quote: "Professionnalisme et écoute du client exceptionnels. Ils maîtrisent parfaitement les offres bancaires et négocient au mieux de vos intérêts.",
+    quote: "Professionalità ed ascolto del cliente eccezionali. Dominano perfettamente le offerte bancarie e negoziano al meglio per i vostri interessi.",
     name: "Elena Bianchi",
     company: "Bianchi Design",
-    city: "Florence",
+    city: "Firenze",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200",
   },
   {
     id: 6,
     rating: 5,
-    quote: "Je remercie toute l'équipe pour leur disponibilité et leur soutien. Une relation de confiance indispensable pour le développement de notre PME.",
+    quote: "Ringrazio tutto il team per la disponibilità e il supporto. Una relazione di fiducia indispensabile per lo sviluppo della nostra PMI.",
     name: "Matteo Conti",
     company: "Conti Logistics",
-    city: "Bologne",
+    city: "Bologna",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
   },
 ];
@@ -110,13 +110,13 @@ export default function TestimonialsSection() {
   return (
     <section className="testimonials-section" ref={sectionRef}>
       <div className="testimonials-container">
-        {/* EN-TÊTE */}
+        {/* INTESTAZIONE */}
         <div className="testimonials-header reveal reveal-up">
-          <span className="badge-blue">TÉMOIGNAGES</span>
-          <h2 className="testimonials-title">Ce que disent les clients</h2>
+          <span className="badge-blue">TESTIMONIANZE</span>
+          <h2 className="testimonials-title">Cosa dicono i nostri clienti</h2>
         </div>
 
-        {/* CARROUSEL DES TÉMOIGNAGES */}
+        {/* CAROSELLO TESTIMONIANZE */}
         <div className="carousel-wrapper reveal reveal-up" style={{ transitionDelay: "0.2s" }}>
           <div
             className="carousel-track"
@@ -126,7 +126,7 @@ export default function TestimonialsSection() {
           >
             {testimonialsData.map((item) => (
               <div className="testimonial-card" key={item.id}>
-                {/* ÉTOILES */}
+                {/* STELLE */}
                 <div className="rating-stars">
                   {[...Array(item.rating)].map((_, i) => (
                     <span key={i} className="star-icon">
@@ -135,12 +135,12 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
 
-                {/* TEXTE / CITATION */}
+                {/* TESTO / CITAZIONE */}
                 <p className="testimonial-quote">{item.quote}</p>
 
                 <hr className="card-divider" />
 
-                {/* AUTEUR */}
+                {/* AUTORE */}
                 <div className="author-info">
                   <div className="avatar-wrapper">
                     <img
@@ -161,24 +161,24 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        {/* INDICATEURS (DOTS) */}
+        {/* INDICATORI (DOTS) */}
         <div className="carousel-dots reveal reveal-up" style={{ transitionDelay: "0.3s" }}>
           {testimonialsData.map((_, idx) => (
             <button
               key={idx}
               className={`dot ${idx === currentIndex ? "active" : ""}`}
               onClick={() => setCurrentIndex(idx)}
-              aria-label={`Aller au témoignage ${idx + 1}`}
+              aria-label={`Vai alla testimonianza ${idx + 1}`}
             />
           ))}
         </div>
 
-        {/* NAVIGATION FLÈCHES */}
+        {/* CONTROLLI NAVIGAZIONE */}
         <div className="carousel-controls reveal reveal-up" style={{ transitionDelay: "0.4s" }}>
           <button
             onClick={handlePrev}
             className="nav-btn"
-            aria-label="Témoignage précédent"
+            aria-label="Testimonianza precedente"
           >
             <svg
               width="20"
@@ -199,7 +199,7 @@ export default function TestimonialsSection() {
           <button
             onClick={handleNext}
             className="nav-btn"
-            aria-label="Témoignage suivant"
+            aria-label="Testimonianza successiva"
           >
             <svg
               width="20"

@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("Accueil");
+  const [activeLink, setActiveLink] = useState("Home");
 
   const solutionsList = [
-    { title: "Crédit Entreprise", desc: "Financement flexible pour vos besoins de trésorerie", href: "#credit" },
-    { title: "Leasing Équipement", desc: "Financez vos machines et véhicules sans impacter vos fonds", href: "#leasing" },
-    { title: "Financement de Projet", desc: "Pour vos investissements lourds et développements", href: "#projets" },
+    { title: "Credito Aziendale", desc: "Finanziamento flessibile per le tue esigenze di liquidità", href: "#credit" },
+    { title: "Leasing Strumentale", desc: "Finanzia macchinari e veicoli senza intaccare la liquidità", href: "#leasing" },
+    { title: "Finanziamento Progetti", desc: "Per i tuoi grandi investimenti e progetti di sviluppo", href: "#projets" },
   ];
 
   const handleLinkClick = (name: string) => {
@@ -23,15 +23,15 @@ export default function Navbar() {
 
   return (
     <header className="navbar-wrapper">
-      {/* 1. TOP BAR D'INFORMATION (Inspirée de la capture) */}
+      {/* 1. TOP BAR D'INFORMAZIONE */}
       <div className="top-bar">
         <div className="top-bar-container">
           <div className="top-bar-left">
             <span>
-              <i className="fa-solid fa-location-dot"></i> Rue du Rhône 42 — 1204 Genève, Suisse
+              <i className="fa-solid fa-location-dot"></i> Rue du Rhône 42 — 1204 Ginevra, Svizzera
             </span>
             <span>
-              <i className="fa-regular fa-clock"></i> Lu - Ve : 08h00 - 18h00
+              <i className="fa-regular fa-clock"></i> Lun - Ven: 08:00 - 18:00
             </span>
           </div>
           <div className="top-bar-right">
@@ -41,16 +41,16 @@ export default function Navbar() {
             <a href="mailto:contact@finova-suisse.ch">
               <i className="fa-regular fa-envelope"></i> contact@finova-suisse.ch
             </a>
-            <span className="badge-finma">Intermédiaire agréé FINMA</span>
+            <span className="badge-finma">Intermediario autorizzato FINMA</span>
           </div>
         </div>
       </div>
 
-      {/* 2. NAVIGATION PRINCIPALE */}
+      {/* 2. NAVIGAZIONE PRINCIPALE */}
       <nav className="main-nav">
         <div className="nav-container">
           {/* LOGO */}
-          <Link href="/" className="logo-link" onClick={() => setActiveLink("Accueil")}>
+          <Link href="/" className="logo-link" onClick={() => setActiveLink("Home")}>
             <Image
               src="/img/logo.png"
               alt="Finova Suisse Logo"
@@ -66,71 +66,65 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className={`nav-item ${activeLink === "Accueil" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Accueil")}
+                className={`nav-item ${activeLink === "Home" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Home")}
               >
-                Accueil
+                Home
               </Link>
             </li>
 
             <li>
               <Link
                 href="/about"
-                className={`nav-item ${activeLink === "À propos" ? "active" : ""}`}
-                onClick={() => handleLinkClick("À propos")}
+                className={`nav-item ${activeLink === "Chi siamo" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Chi siamo")}
               >
-                À propos
+                Chi siamo
               </Link>
             </li>
 
             <li>
               <Link
                 href="#solutions"
-                className={`nav-item ${activeLink === "À propos" ? "active" : ""}`}
-                onClick={() => handleLinkClick("À propos")}
+                className={`nav-item ${activeLink === "Soluzioni" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Soluzioni")}
               >
-                Solutions
+                Soluzioni
               </Link>
             </li>
-
-           
 
             <li>
               <Link
                 href="#process"
-                className={`nav-item ${activeLink === "Comment ça marche" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Comment ça marche")}
+                className={`nav-item ${activeLink === "Come funziona" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Come funziona")}
               >
-                Comment ça marche
+                Come funciona
               </Link>
             </li>
-
-          
-
-           
 
             <li>
               <Link
                 href="/contact"
-                className={`nav-item ${activeLink === "Contact" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Contact")}
+                className={`nav-item ${activeLink === "Contatti" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Contatti")}
               >
-                Contact
+                Contatti
               </Link>
             </li>
           </ul>
 
-          {/* BOUTONS D'ACTION (DESKTOP) */}
+          {/* PULSANTI D'AZIONE (DESKTOP) */}
           <div className="nav-actions">
             <Link href="/loan" className="btn-secondary">
-              Simulateur
+              Simulatore
             </Link>
             <Link href="/devis" className="btn-primary">
-              Demander un financement
+              Richiedi un finanziamento
             </Link>
           </div>
 
-          {/* BOUTON HAMBURGER (MOBILE) */}
+          {/* PULSANTE HAMBURGER (MOBILE) */}
           <button
             className="mobile-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -140,57 +134,55 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* MENU MOBILE INTERACTIF ET ANIMÉ */}
+        {/* MENU MOBILE INTERATTIVO */}
         <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
           <ul className="mobile-links">
             <li>
               <Link
                 href="/"
-                className={`mobile-item ${activeLink === "Accueil" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Accueil")}
+                className={`mobile-item ${activeLink === "Home" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Home")}
               >
-                Accueil
+                Home
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className={`mobile-item ${activeLink === "À propos" ? "active" : ""}`}
-                onClick={() => handleLinkClick("À propos")}
+                className={`mobile-item ${activeLink === "Chi siamo" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Chi siamo")}
               >
-                À propos
+                Chi siamo
               </Link>
             </li>
 
-           <li>
+            <li>
               <Link
                 href="#solutions"
-                className={`nav-item ${activeLink === "À propos" ? "active" : ""}`}
-                onClick={() => handleLinkClick("À propos")}
+                className={`mobile-item ${activeLink === "Soluzioni" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Soluzioni")}
               >
-                Solutions
+                Soluzioni
               </Link>
             </li>
 
             <li>
               <Link
                 href="#process"
-                className={`mobile-item ${activeLink === "Comment ça marche" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Comment ça marche")}
+                className={`mobile-item ${activeLink === "Come funciona" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Come funciona")}
               >
-                Comment ça marche
+                Come funziona
               </Link>
             </li>
-           
             
             <li>
-
               <Link
                 href="/contact"
-                className={`mobile-item ${activeLink === "Contact" ? "active" : ""}`}
-                onClick={() => handleLinkClick("Contact")}
+                className={`mobile-item ${activeLink === "Contatti" ? "active" : ""}`}
+                onClick={() => handleLinkClick("Contatti")}
               >
-                Contact
+                Contatti
               </Link>
             </li>
           </ul>
@@ -201,14 +193,14 @@ export default function Navbar() {
               className="btn-secondary w-full"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Simulateur
+              Simulatore
             </Link>
             <Link
               href="/devis"
               className="btn-primary w-full"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Demander un financement
+              Richiedi un finanziamento
             </Link>
           </div>
         </div>

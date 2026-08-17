@@ -33,19 +33,19 @@ export default function CtaSection() {
       {/* CONTENU CENTRAL */}
       <div className="cta-container">
         <h2 className="cta-title reveal reveal-up">
-          Prêt à développer <br className="mobile-only-br" />
-          <span className="text-yellow">votre entreprise ?</span>
+          Pronto a far crescere <br className="mobile-only-br" />
+          <span className="text-yellow">la tua azienda?</span>
         </h2>
 
         <p className="cta-subtitle reveal reveal-up" style={{ transitionDelay: "0.15s" }}>
-          Demandez votre devis personnalisé dès maintenant. Gratuit et sans
-          engagement, sous 24 heures.
+          Richiedi subito il tuo preventivo personalizzato. Gratuito e senza
+          impegno, in 24 ore.
         </p>
 
         {/* GROUPE DE BOUTONS */}
         <div className="cta-buttons reveal reveal-up" style={{ transitionDelay: "0.3s" }}>
           <Link href="#demande-devis" className="btn-cta-primary">
-            <span>Demandez un devis gratuit</span>
+            <span>Richiedi un preventivo gratuito</span>
             <svg
               className="btn-arrow"
               width="18"
@@ -62,7 +62,7 @@ export default function CtaSection() {
           </Link>
 
           <a href="tel:+393534808704" className="btn-cta-secondary">
-            Appelez le : +39 353 480 8704
+            Chiama: +39 353 480 8704
           </a>
         </div>
       </div>

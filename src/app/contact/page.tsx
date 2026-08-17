@@ -37,55 +37,55 @@ export default function ContactPage() {
     e.preventDefault();
 
     if (!formData.acceptPolitique) {
-      alert("Veuillez accepter la politique de confidentialité.");
+      alert("Si prega di accettare l'Informativa sulla Privacy.");
       return;
     }
 
-    console.log("Message de contact envoyé :", formData);
+    console.log("Messaggio di contatto inviato:", formData);
     setIsSubmitted(true);
   };
 
   return (
     <div>
-      {/* BANNIÈRE / HEADER */}
+      {/* BANNER / HEADER */}
       <section className="contact-hero">
         <div className="contact-hero-container">
           <div className="contact-breadcrumb">
-            <a href="/">Maison</a>
+            <a href="/">Home</a>
             <span>/</span>
-            <strong>Contacts</strong>
+            <strong>Contatti</strong>
           </div>
-          <div className="contact-tagline">NOUS SOMMES LÀ POUR VOUS</div>
-          <h1 className="contact-hero-title">Contacts</h1>
+          <div className="contact-tagline">SIAMO QUI PER TE</div>
+          <h1 className="contact-hero-title">Contatti</h1>
           <p className="contact-hero-subtitle">
-            Nous sommes à votre disposition pour toute information.
+            Siamo a tua completa disposizione per qualsiasi informazione.
           </p>
         </div>
       </section>
 
-      {/* CONTENU PRINCIPAL */}
+      {/* CONTENUTO PRINCIPALE */}
       <div className="contact-main">
-        {/* COLONNE GAUCHE : INFOS DE CONTACT & HORAIRES */}
+        {/* COLONNA SINISTRA: INFO DI CONTATTO & ORARI */}
         <aside>
-          <h2 className="contact-section-title">Comment nous contacter</h2>
+          <h2 className="contact-section-title">Come contattarci</h2>
           
           <div className="contact-info-list">
-            {/* Adresse */}
+            {/* Indirizzo */}
             <div className="contact-info-item">
               <i className="fa-solid fa-location-dot contact-info-icon"></i>
               <div className="contact-info-content">
-                <span className="contact-info-label">Site</span>
+                <span className="contact-info-label">Sede</span>
                 <span className="contact-info-text">
-                  Via San Francesco da Paola, 8 — 10121 Turin (TO), Piémont, Italie
+                  Via San Francesco da Paola, 8 — 10121 Torino (TO), Piemonte, Italia
                 </span>
               </div>
             </div>
 
-            {/* Téléphone */}
+            {/* Telefono */}
             <div className="contact-info-item">
               <i className="fa-solid fa-phone contact-info-icon"></i>
               <div className="contact-info-content">
-                <span className="contact-info-label">Téléphone</span>
+                <span className="contact-info-label">Telefono</span>
                 <a href="tel:+393534808704" className="contact-info-text">
                   +39 353 480 8704
                 </a>
@@ -114,32 +114,32 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="contact-info-text"
                 >
-                  Écrivez-nous sur WhatsApp
+                  Scrivici su WhatsApp
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Horaires d'ouverture */}
-          <h2 className="contact-section-title">Horaires d'ouverture</h2>
+          {/* Orari di apertura */}
+          <h2 className="contact-section-title">Orari di apertura</h2>
           <table className="contact-hours-table">
             <tbody>
               <tr>
-                <td className="contact-hours-day">Lundi — vendredi</td>
-                <td className="contact-hours-time">Du lundi au vendredi : 9h00 - 18h00</td>
+                <td className="contact-hours-day">Lunedì — venerdì</td>
+                <td className="contact-hours-time">Dal lunedì al venerdì: 09:00 - 18:00</td>
               </tr>
               <tr>
-                <td className="contact-hours-day">Samedi</td>
-                <td className="contact-hours-time">Samedi : sur rendez-vous</td>
+                <td className="contact-hours-day">Sabato</td>
+                <td className="contact-hours-time">Sabato: su appuntamento</td>
               </tr>
               <tr>
-                <td className="contact-hours-day">Dimanche</td>
-                <td className="contact-hours-time">Fermé</td>
+                <td className="contact-hours-day">Domenica</td>
+                <td className="contact-hours-time">Chiuso</td>
               </tr>
             </tbody>
           </table>
 
-          {/* Bouton vert WhatsApp Banner */}
+          {/* Pulsante verde WhatsApp Banner */}
           <a
             href="https://wa.me/393534808704"
             target="_blank"
@@ -147,11 +147,11 @@ export default function ContactPage() {
             className="whatsapp-btn-banner"
           >
             <i className="fa-brands fa-whatsapp"></i>
-            <span>Écrivez-nous sur WhatsApp</span>
+            <span>Scrivici su WhatsApp</span>
           </a>
         </aside>
 
-        {/* COLONNE DROITE : FORMULAIRE DE CONTACT */}
+        {/* COLONNA DESTRA: FORM DI CONTATTO */}
         <main>
           {isSubmitted ? (
             <div
@@ -168,9 +168,9 @@ export default function ContactPage() {
                 className="fa-solid fa-circle-check"
                 style={{ fontSize: "36px", marginBottom: "12px" }}
               ></i>
-              <h3 style={{ margin: "0 0 8px 0" }}>Message envoyé avec succès !</h3>
+              <h3 style={{ margin: "0 0 8px 0" }}>Messaggio inviato con successo!</h3>
               <p style={{ margin: 0, fontSize: "14px" }}>
-                Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.
+                Grazie per averci contattato. Ti risponderemo il prima possibile.
               </p>
             </div>
           ) : (
@@ -178,7 +178,7 @@ export default function ContactPage() {
               <div className="contact-form-grid-2">
                 <div className="contact-form-group">
                   <label className="contact-label">
-                    Nom et prénom <span className="contact-required">*</span>
+                    Nome e cognome <span className="contact-required">*</span>
                   </label>
                   <input
                     type="text"
@@ -207,7 +207,7 @@ export default function ContactPage() {
 
               <div className="contact-form-group">
                 <label className="contact-label">
-                  Téléphone <span className="contact-optional">(facultatif)</span>
+                  Telefono <span className="contact-optional">(opzionale)</span>
                 </label>
                 <input
                   type="tel"
@@ -220,13 +220,13 @@ export default function ContactPage() {
 
               <div className="contact-form-group">
                 <label className="contact-label">
-                  Message <span className="contact-required">*</span>
+                  Messaggio <span className="contact-required">*</span>
                 </label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Décrivez vos besoins de financement..."
+                  placeholder="Descrivi le tue esigenze di finanziamento..."
                   required
                   className="contact-textarea"
                 />
@@ -241,13 +241,13 @@ export default function ContactPage() {
                   required
                 />
                 <span>
-                  J'ai lu et j'accepte la{" "}
-                  <a href="#">Politique de confidentialité</a> . Je consens au traitement de mes données afin de répondre à ma demande. <span className="contact-required">*</span>
+                  Ho letto e accetto l'{" "}
+                  <a href="#">Informativa sulla Privacy</a> . Acconsento al trattamento dei miei dati per rispondere alla mia richiesta. <span className="contact-required">*</span>
                 </span>
               </label>
 
               <button type="submit" className="contact-submit-btn">
-                Envoyer un message
+                Invia messaggio
               </button>
             </form>
           )}

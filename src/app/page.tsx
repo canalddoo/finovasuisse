@@ -13,38 +13,38 @@ export default function Home() {
       <Hero />
 
       {/* SECTION AVANTAGES / REASSURANCE */}
-      <section className="features-bar">
+
+     <section className="features-bar">
         <div className="features-container">
           
           <div className="feature-item">
-            <h3 className="feature-title">RÉPONSE SOUS 24 HEURES</h3>
-            <p className="feature-desc">Devis gratuit et sans engagement</p>
+            <h3 className="feature-title">RISPOSTA ENTRO 24 ORE</h3>
+            <p className="feature-desc">Preventivo gratuito e senza impegno</p>
           </div>
 
           <div className="feature-divider"></div>
 
           <div className="feature-item">
-            <h3 className="feature-title">PLUS DE 20 INSTITUTS</h3>
-            <p className="feature-desc">Accès à un vaste réseau de partenaires</p>
+            <h3 className="feature-title">OLTRE 20 ISTITUTI</h3>
+            <p className="feature-desc">Accesso a un'ampia rete di partner</p>
           </div>
 
           <div className="feature-divider"></div>
 
           <div className="feature-item">
-            <h3 className="feature-title">100% NUMÉRIQUE</h3>
-            <p className="feature-desc">Processus entièrement en ligne</p>
+            <h3 className="feature-title">100% DIGITALE</h3>
+            <p className="feature-desc">Processo interamente online</p>
           </div>
 
           <div className="feature-divider"></div>
 
           <div className="feature-item">
-            <h3 className="feature-title">INTERMÉDIAIRE FINMA</h3>
-            <p className="feature-desc">Registre des opérateurs financiers suisses</p>
+            <h3 className="feature-title">INTERMEDIARIO FINMA</h3>
+            <p className="feature-desc">Registro degli operatori finanziari svizzeri</p>
           </div>
 
         </div>
       </section>
-
       <SolutionsSection />
       <HowItWorksSection />
       <LoanCalculator />

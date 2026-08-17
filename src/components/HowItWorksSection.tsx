@@ -13,23 +13,23 @@ interface StepItem {
 const stepsData: StepItem[] = [
   {
     number: "01",
-    title: "Demander un devis",
-    description: "Remplissez le formulaire en ligne en quelques minutes seulement. Sans engagement, sans frais.",
+    title: "Richiedi un preventivo",
+    description: "Compila il modulo online in pochissimi minuti. Senza impegno e senza costi.",
   },
   {
     number: "02",
-    title: "Analyse de la situation",
-    description: "Nos consultants sélectionnent les meilleures offres de notre réseau.",
+    title: "Analisi della situazione",
+    description: "I nostri consulenti selezionano le migliori offerte della nostra rete.",
   },
   {
     number: "03",
-    title: "Sélection de produits",
-    description: "Nous vous présentons le TAEG et les mensualités. Choisissez en toute transparence.",
+    title: "Selezione dei prodotti",
+    description: "Ti presentiamo il TAN/TAEG e le rate mensili. Scegli in totale trasparenza.",
   },
   {
     number: "04",
-    title: "Paiement sur le compte",
-    description: "Les fonds sont versés directement sur le compte de votre entreprise.",
+    title: "Accredito sul conto",
+    description: "I fondi vengono versati direttamente sul conto della tua azienda.",
   },
 ];
 
@@ -57,43 +57,43 @@ export default function HowItWorksSection() {
   return (
     <section className="how-it-works-section" id="process" ref={sectionRef}>
       <div className="how-it-works-container">
-        {/* COLONNE GAUCHE : IMAGE + BADGE STATS */}
+        {/* COLONNA SINISTRA: IMMAGINE + BADGE STATISTICHE */}
         <div className="how-it-works-media reveal reveal-left">
           <div className="image-wrapper">
             <Image
               src="/img/how-it-works.avif"
-              alt="Conseillère financière souriante"
+              alt="Consulente finanziaria sorridente"
               width={600}
               height={550}
               className="process-image"
               priority
             />
 
-            {/* OVERLAY GLASSMORPHISM / STATS */}
+            {/* OVERLAY GLASSMORPHISM / STATISTICHE */}
             <div className="stats-glass-card">
               <div className="stat-item">
                 <span className="stat-number">24h</span>
-                <span className="stat-label">Réponse garantie</span>
+                <span className="stat-label">Risposta garantita</span>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-item">
                 <span className="stat-number">20+</span>
-                <span className="stat-label">partenaires financiers</span>
+                <span className="stat-label">partner finanziari</span>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-item">
                 <span className="stat-number">0</span>
-                <span className="stat-label">coûts initiaux</span>
+                <span className="stat-label">costi iniziali</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* COLONNE DROITE : CONTENU & ÉTAPES */}
+        {/* COLONNA DESTRA: CONTENUTO E PASSAGGI */}
         <div className="how-it-works-content">
           <div className="content-header reveal reveal-up">
-            <span className="section-subtitle">PROCESSUS SIMPLE</span>
-            <h2 className="section-title">Comment ça marche</h2>
+            <span className="section-subtitle">PROCESSO SEMPLICE</span>
+            <h2 className="section-title">Come funziona</h2>
           </div>
 
           <div className="steps-list">
@@ -113,8 +113,8 @@ export default function HowItWorksSection() {
           </div>
 
           {/* <div className="content-footer reveal reveal-up" style={{ transitionDelay: "0.8s" }}>
-            <Link href="#en-savoir-plus" className="process-link">
-              <span>Apprenez-en davantage sur le processus</span>
+            <Link href="#scopri-di-piu" className="process-link">
+              <span>Scopri di più sul processo</span>
               <i className="fa-solid fa-chevron-right link-arrow"></i>
             </Link>
           </div> */}

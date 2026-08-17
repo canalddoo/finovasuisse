@@ -5,8 +5,8 @@ import React from "react";
 interface Partner {
   id: string;
   name: string;
-  logoUrl?: string; // Optionnel : lien de l'image du logo
-  accentColor?: string; // Optionnel : couleur de la barre verticale si c'est un badge textuel
+  logoUrl?: string; // Opzionale: link all'immagine del logo
+  accentColor?: string; // Opzionale: colore della barra verticale per il badge testuale
 }
 
 const partnersData: Partner[] = [
@@ -30,13 +30,12 @@ const partnersData: Partner[] = [
     name: "BPER Banca",
     logoUrl: "/img/BPERBanca.png",
   },
-  
 ];
 
 export default function Partners() {
   return (
     <section className="partners-section">
-      <h2 className="partners-title">Nos institutions partenaires</h2>
+      <h2 className="partners-title">I nostri istituti partner</h2>
 
       <div className="partners-grid">
         {partnersData.map((partner) => (
@@ -54,7 +53,7 @@ export default function Partners() {
                   style={{ backgroundColor: partner.accentColor || "#2563eb" }}
                 />
                 <span>{partner.name}</span>
-              </div> 
+              </div>
             )}
           </div>
         ))}

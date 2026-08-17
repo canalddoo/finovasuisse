@@ -5,43 +5,43 @@ export default function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-container">
-        {/* COLONNE GAUCHE : TEXTE ET CALL TO ACTION */}
+        {/* COLONNA SINISTRA: TESTO E CALL TO ACTION */}
         <div className="hero-content">
-          {/* BADGE PILULE */}
+          {/* BADGE A PILLOLA */}
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            <span>Intermédiaire agréé FINMA — Genève, Suisse</span>
+            <span>Intermediario autorizzato FINMA — Ginevra, Svizzera</span>
           </div>
 
-          {/* TITRE PRINCIPAL */}
+          {/* TITOLO PRINCIPALE */}
           <h1 className="hero-title">
-            Financement professionnel <br />
-            <span className="hero-title-highlight">pour votre entreprise</span>
+            Finanziamento professionale <br />
+            <span className="hero-title-highlight">per la tua impresa</span>
           </h1>
 
-          {/* DESCRIPTION */}
+          {/* DESCRIZIONE */}
           <p className="hero-description">
-            Solutions de crédit sur mesure pour les PME, les indépendants et les
-            entreprises individuelles. Devis gratuit et sans engagement sous 24h.
+            Soluzioni di credito su misura per PMI, liberi professionisti e
+            ditte individuali. Preventivo gratuito e senza impegno entro 24 ore.
           </p>
 
-          {/* BOUTONS D'ACTION */}
+          {/* PULSANTI D'AZIONE */}
           <div className="hero-actions">
             <Link href="/devis" className="btn-hero-primary">
-              Demander un devis gratuit
+              Richiedi un preventivo gratuito
               <i className="fa-solid fa-chevron-right icon-arrow"></i>
             </Link>
             <Link href="/contact" className="btn-hero-secondary">
-              Contact
+              Contatti
             </Link>
           </div>
         </div>
 
-        {/* COLONNE DROITE : IMAGE AVEC BORDURES ARRONDIES */}
+        {/* COLONNA DESTRA: IMMAGINE CON BORDI ARROTONDATI */}
         <div className="hero-image-wrapper">
           <Image
             src="/img/hero.jpg"
-            alt="Financement professionnel Finova Suisse"
+            alt="Finanziamento professionale Finova Suisse"
             width={600}
             height={420}
             className="hero-img"

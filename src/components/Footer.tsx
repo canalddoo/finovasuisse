@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* COLONNE 1 : BRAND & INFOS */}
+        {/* COLONNA 1: BRAND & INFO */}
         <div className="footer-col brand-col">
           <Link href="/" className="footer-logo">
             <Image
@@ -16,52 +16,52 @@ export default function Footer() {
             />
           </Link>
           <p className="footer-desc">
-            Solutions de financement professionnelles pour les PME, les travailleurs indépendants et les entreprises individuelles.
+            Soluzioni di finanziamento professionali per PMI, liberi professionisti e ditte individuali.
           </p>
-          <span className="footer-badge">Intermédiaire financier — FINMA</span>
+          <span className="footer-badge">Intermediario finanziario — FINMA</span>
         </div>
 
-        {/* COLONNE 2 : NAVIGATION */}
+        {/* COLONNA 2: NAVIGAZIONE */}
         <div className="footer-col">
-          <h4 className="footer-title">NAVIGATION</h4>
+          <h4 className="footer-title">NAVIGAZIONE</h4>
           <ul className="footer-links">
-            <li><Link href="/about">À propos</Link></li>
-            <li><Link href="#solutions">Solutions</Link></li>
-            <li><Link href="#process">Comment ça marche</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/loan">Simulateur de prêt</Link></li>
+            <li><Link href="/about">Chi siamo</Link></li>
+            <li><Link href="#solutions">Soluzioni</Link></li>
+            <li><Link href="#process">Come funziona</Link></li>
+            <li><Link href="/contact">Contatti</Link></li>
+            <li><Link href="/loan">Calcolatore di prestito</Link></li>
           </ul>
         </div>
 
-        {/* COLONNE 3 : SERVICES */}
+        {/* COLONNA 3: SERVIZI */}
         <div className="footer-col">
-          <h4 className="footer-title">SERVICES</h4>
+          <h4 className="footer-title">SERVIZI</h4>
           <ul className="footer-links">
-            <li><Link href="/devis">Crédit Entreprise</Link></li>
-            <li><Link href="#leasing">Leasing Équipement</Link></li>
-            <li><Link href="#tresorerie">Trésorerie & Factures</Link></li>
-            <li><Link href="#affacturage">Affacturage</Link></li>
-            <li><Link href="#projets">Financement de Projet</Link></li>
+            <li><Link href="/devis">Credito Aziendale</Link></li>
+            <li><Link href="#leasing">Leasing Strumentale</Link></li>
+            <li><Link href="#tresorerie">Liquidità & Fatture</Link></li>
+            <li><Link href="#affacturage">Factoring</Link></li>
+            <li><Link href="#projets">Finanziamento Progetti</Link></li>
           </ul>
         </div>
 
-        {/* COLONNE 4 : CONTACTS */}
+        {/* COLONNA 4: CONTATTI */}
         <div className="footer-col">
-          <h4 className="footer-title">CONTACTS</h4>
-          <p className="contact-item">Rue du Rhône 42 — 1204 Genève, Suisse</p>
+          <h4 className="footer-title">CONTATTI</h4>
+          <p className="contact-item">Rue du Rhône 42 — 1204 Ginevra, Svizzera</p>
           <p className="contact-item">+41 22 123 45 67</p>
           <p className="contact-item">contact@finova-suisse.ch</p>
-          <p className="contact-item highlight">Du lundi au vendredi : 8h00 - 18h00</p>
+          <p className="contact-item highlight">Dal lunedì al venerdì: 08:00 - 18:00</p>
         </div>
       </div>
 
-      {/* COPYRIGHT & MENTIONS LEGALES */}
+      {/* COPYRIGHT & NOTE LEGALI */}
       <div className="footer-bottom">
         <div className="footer-bottom-container">
-          <p>© 2026 Finova Suisse. Tous droits réservés.</p>
+          <p>© 2026 Finova Suisse. Tutti i diritti riservati.</p>
           <div className="legal-links">
-            <Link href="#">Confidentialité</Link>
-            <Link href="#">Mentions légales</Link>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Note legali</Link>
           </div>
         </div>
       </div>
